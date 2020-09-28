@@ -1,0 +1,24 @@
+.btn {
+    background-color: green;
+    color: white; 
+    letter-spacing: 3px;  
+
+}
+
+button.__menu {
+    @extend .btn;
+    width: 100px;
+    border-radius: 30px;
+    position: relative;
+    top: 0;
+    margin-bottom: 190px;
+}
+
+@media screen and (max-width: 576px) {
+
+button.__menu {
+        position: relative;
+        top: 0;
+        margin-bottom: 0px;
+    }
+}

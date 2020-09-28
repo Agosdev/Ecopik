@@ -1,0 +1,14 @@
+form {
+    background-image: url(../../assets/imagenes/vegetables.gif);
+    background-repeat: no-repeat;
+    background-size: 750px 600px;
+    background-position: bottom;
+    height: 800px;
+}
+
+@media screen and (max-width: 576px) {
+    form {
+    background-size: 450px 400px;
+    height: 550px;
+    }
+}

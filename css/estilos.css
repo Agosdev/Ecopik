@@ -1,0 +1,101 @@
+
+body {
+    font-family: alata;
+    text-align: center;
+    height: 250vh;
+}
+
+h1 {
+    font-family: chelseamarket;
+    font-size: 200px;
+}
+
+.navbar {
+    width: auto;
+    height: 100%;
+}
+
+#logo {
+   position: relative;
+   top: 0;
+}
+
+ul li {
+    list-style: none;
+    font-size: 20px;
+}
+
+ul :hover {
+    text-decoration: none;
+    color: lime;
+}
+
+h2 {
+    font-family: chelseamarket;
+    color: lime;
+    font-size: 100px;
+}
+
+.navbar {
+    width: 170px;
+    height: 100%;
+}
+
+.galeria {
+    width: 100%;
+}
+
+.table {
+    width: 96%;
+}
+
+p.bg-dark {
+    width: 99%;
+}
+
+
+@media (max-width: 576px) {
+.navbar {      
+     width: 100%;
+     height: auto;
+}
+         
+#logo {
+    width: 50px;
+    height: 50px;
+}
+
+ul li {
+     font-size: 15px;
+}
+  
+ul {
+    display: flex;
+}
+
+li{
+    padding: 5px;
+}
+
+h1 {
+    font-size: 100px;
+    margin-top: 200px;
+}
+
+
+h2 {
+    font-size: 50px;
+}
+
+.table {
+    width: 80%;
+}
+
+.acortar {
+    width: 180px;
+}
+
+.dropdown-menu {
+    width: 180px;
+}
+}
