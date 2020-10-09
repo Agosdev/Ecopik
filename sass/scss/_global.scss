@@ -15,7 +15,7 @@ html, body {
 .header {
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 4;
     width: 100%;
     background-color: #f1f1f1;
   }
@@ -34,16 +34,8 @@ html, body {
     width: 0%;
   }
 
-.actioncall {
-    border: 3px solid black;
-    position: absolute;
-    top: 0;
-    left: 85%;
-    z-index: 1;
-}
-
 .carrusel {
-    z-index: 2;
+    z-index: 1;
 }
 
 .logo {
@@ -59,6 +51,7 @@ h1{
 }
 
 .navbar {
+    z-index: 2;
     width: 160px;
     height: 100%;
     box-shadow: 3px 10px 15px black;
@@ -222,8 +215,9 @@ li {
 
 h1 {
     padding-top: 0px;
+    margin-right: 2px;
     position: absolute;
-    left: 60%;
+    left: 55%;
 }
 
 h2 {
@@ -244,11 +238,6 @@ a {
 .carousel-item {
   margin-top: 60px;
 
-}
-
-.actioncall {
-    top: 30px;
-    left: 75%;
 }
 
 .table {

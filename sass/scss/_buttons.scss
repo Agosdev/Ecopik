@@ -12,7 +12,22 @@
     } 
 }
 
+.actioncall {
+    border: 3px solid black;
+    position: absolute;
+    top: 0;
+    left: 85%;
+    z-index: 3;
+}
+
 .pregunta {
     width: 50%;  
 }
 
+@media screen and (max-width: 576px) {
+
+.actioncall {
+        top: 30px;
+        left: 75%;
+    }
+}
