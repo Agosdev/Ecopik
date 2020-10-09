@@ -1,5 +1,4 @@
 // GRID 
-
 .caja {
 	display: grid;
 	grid-template-areas: 
@@ -7,24 +6,22 @@
 	"big big side"
 	"big big side";
 	grid-template-rows: 300px 300px 300px;
-    grid-template-columns: 400px 450px 300px;
-    margin: 10px;
+  grid-template-columns: 400px 450px 300px;
+  margin: 10px;
 }
 
 
 .top{
     grid-area: top;
-  }
+}
   
 .big{
     grid-area: big;
-  }
+}
 
 aside{  
     grid-area: side;
-  }
-
-
+}
 
 // GRID FONTS
 
@@ -32,11 +29,11 @@ h3{
     font-size: 150px;
     letter-spacing: 10px;
     text-transform: uppercase;
-    }
+}
 
-h3.vertical{
-    font-size: 80px;
-     writing-mode: vertical-rl;
+.vertical{
+  font-size: 80px;
+  writing-mode: vertical-rl;
 }
 
 h3.min {
@@ -44,30 +41,26 @@ h3.min {
     margin-top: 10px;
 }
 
-h3:hover {
-    transform: skewX(10deg);
+@media screen and (max-width: 576px) {
+.caja {
+   grid-template-rows: 120px 110px 50px;
+   grid-template-columns: 200px 180px 110px;
+   padding-top: 70px;
+   padding-bottom: 100px;
 }
 
-@media screen and (max-width: 576px) {
-    .caja {
-        grid-template-rows: 170px 140px 80px;
-        grid-template-columns: 120px 220px 150px;
-        padding-top: 70px;
-        padding-bottom: 100px;
-    }
+h3{
+   font-size: 60px;
+   letter-spacing: 3px;
+   margin: 0;
+}
 
-    h3{
-        font-size: 60px;
-        letter-spacing: 3px;
-        margin: 0;
-        }
+.vertical{
+  font-size: 30px;
+}
     
-    h3.vertical{
-        font-size: 30px;
-    }
-    
-    h3.min {
-        font-size: 35px;
-        margin-top: 5px;
+h3.min {
+    font-size: 35px;
+    margin-top: 5px;
     } 
 }

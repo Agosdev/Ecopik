@@ -1,60 +1,108 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-     <title>Ecopik</title>
-     <meta charset="utf-8"/>
-     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-     <meta name= "keywords" content="COMUNIDAD ECOLOGICA, DISTRIBUCION DE ALIMENTOS ORGANICOS, HUERTAS EN BUENOS AIRES"/>
-     <meta name= "description" content="Espacio para amantes de la cocina y cosecha de alimentos saludables. Distribuimos frutas, verduras y viandas. Organizamos concursos y ferias."/>
-     <link rel="icon" type="image/icon" href="assets/imagenes/icon.png"/>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-     <link rel="stylesheet" href="css/bootstrap.min.css"> 
-     <link rel="stylesheet" type="text/css" href="sass/css/style.css"/>
-    </head>
-    <body>
-        <header>
-            <h2>Preguntas Frecuentes</h2>
-        </header>
-                <div class="d-flex flex-column">
-                    <button class="btn dropdown-toggle m-5" type="button" data-toggle="dropdown">
-                    <p class="text-uppercase">¿Como se que incluye el pedido</p><p class="text-uppercase">de la semana?</p></button>
+  <html lang="es">
+     <head>
+            <title>Ecopik</title>
+            <meta charset="utf-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+            <meta name= "keywords" content="COMUNIDAD ECOLOGICA, DISTRIBUCION DE ALIMENTOS ORGANICOS, HUERTAS EN BUENOS AIRES"/>
+            <meta name= "description" content="Espacio para amantes de la cocina y cosecha de alimentos saludables. Distribuimos frutas, verduras y viandas. Organizamos concursos y ferias."/>
+            <link rel="icon" type="image/icon" href="assets/imagenes/icon.png"/>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+            <link rel="stylesheet" href="css/bootstrap.min.css"> 
+            <link rel="stylesheet" type="text/css" href="sass/css/style.css"/>
+     </head>
+      <body>
+            <header>
+                <h2 class="glow">Preguntas Frecuentes</h2>
+            </header>
+                <style>
+                    .parallax {
+                    /* The image used */
+                    background-image: url("assets/imagenes/faq.jpg");
+                    /* Set a specific height */
+                    min-height: 350px;  
+                    /* Create the parallax scrolling effect */
+                    background-attachment: fixed;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 500px 400px;
+                    }
+                    @media screen and (max-width: 576px) {
+                .parallax {
+                    background-size: 400px 350px;
+                    }
+                    }
+                    </style>
+                    <div class="parallax d-none d-sm-block"></div>
+            <section class="d-none d-sm-block">
+                    <div>
+                        <button class="btn dropdown-toggle m-5 pregunta" type="button" data-toggle="dropdown">
+                            ¿En qué zonas entregan envíos?</button>
+                            <ul class="dropdown-menu">
+                                <li>Los lunes, miércoles y viernes en CABA. Los martes y jueves en GBA.</li>
+                            </ul>
+                    </div>
+                    <div>
+                        <button class="btn dropdown-toggle m-5 pregunta" type="button" data-toggle="dropdown">
+                        ¿Se realizan ferias si llueve?</button>
+                            <ul class="dropdown-menu">
+                            <li>Los eventos son al aire libre y por lo tanto, si llueve, se cancelan avisando por correo 24hs antes</li>
+                            </ul>
+                    </div>
+                    <div>
+                        <button class="btn dropdown-toggle m-5 pregunta" type="button" data-toggle="dropdown">
+                        ¿Como participo del concurso si ya comparti mi receta?</button>
+                            <ul class="dropdown-menu">
+                            <li>Una vez que publicas un plato y nuestros moderadores la aprueban, participas automaticamente del concurso al obtener mas de 30 likes</li>
+                            </ul>
+                    </div>
+            </section>
+            <section class="container d-sm-none d-block"> 
+                <div>
+                    <button class="sm-btn dropdown-toggle m-5 pregunta" type="button" data-toggle="dropdown">
+                    ¿En qué zonas entregan envíos?</button>
                         <ul class="dropdown-menu">
-                            <li class="respuesta">Podes consultar lo último cultivado de la cosecha en el inicio de nuestra web</p></li>
-                        </ul>
-                    <button class="btn dropdown-toggle m-5" type="button" data-toggle="dropdown">
-                        <p class="text-uppercase">¿Se realizan ferias si llueve?</p></button>
-                        <ul class="dropdown-menu">
-                           <li><p>Los eventos son al aire libre y por lo tanto, si llueve, se cancelan avisando por correo 24hs antes</p></li>
-                        </ul>
-                    <button class="btn dropdown-toggle m-5" type="button" data-toggle="dropdown">
-                        <p class="text-uppercase">¿Como participo del concurso</p><p class="text-uppercase">si ya comparti mi receta?</p></button>
-                        <ul class="dropdown-menu">
-                           <li><p>Una vez que publicas un plato y nuestros moderadores la aprueban, participas automaticamente del concurso al obtener mas de 30 likes</p></li>
+                            <li>Los lunes, miércoles y viernes en CABA. Los martes y jueves en GBA.</li>
                         </ul>
                 </div>
-          <button class="m-3 btn font-weight-bold"><a href="index.html">Volver</a></button>
-<footer>
-    <div class="row bg-success pt-5">
-        <div class="col-6">
-          <blockquote class="blockquote text-white">
-             <p>“Deje que los alimentos sean su medicina</p><p>y que la medicina sea su alimento”</p>
-             <cite title="Source Title">Hipocrates</cite>
-          </blockquote>
-       </div>
-       <div class="col-3">
-          <a href="preguntas.html"><p class="font-weight-bold">Preguntas frecuentes</p></a>
-          <a href="pagos.html"><p class="font-weight-bold">Medios de pago</p></a>
-          <a href="error.404.html"><p class="font-weight-bold">Trabaja con nosotros</p></a> 
-       </div>
-       <div class="col-3">
-          <a href="https://www.instagram.com/bioguia" target="blank"><p class="font-weight-bold">Instagram</p></a>
-          <a href="https://www.facebook.com/LaBioguia" target="blank"><p class="font-weight-bold">Facebook</p></a>
-          <a href="https://www.youtube.com/user/Bioguia"target="blank"><p class="font-weight-bold">Youtube</p></a>
-       </div>
-    </div>
-</footer>
-<script src="js/jquery-3.5.1.slim.min.js"></script> 
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>  
+                <div>
+                    <button class="sm-btn dropdown-toggle m-5 pregunta" type="button" data-toggle="dropdown">
+                    ¿Se realizan ferias si llueve?</button>
+                        <ul class="dropdown-menu">
+                        <li>Los eventos son al aire libre y por lo tanto, si llueve, se cancelan avisando por correo 24hs antes</li>
+                        </ul>
+                </div>
+                <div>
+                    <button class="sm-btn dropdown-toggle m-5 pregunta" type="button" data-toggle="dropdown">
+                    ¿Como participo del concurso si ya comparti mi receta?</button>
+                        <ul class="dropdown-menu">
+                        <li>Una vez que publicas un plato y nuestros moderadores la aprueban, participas automaticamente del concurso al obtener mas de 30 likes</li>
+                        </ul>
+                </div>
+        </section>
+            <button class="m-3 btn font-weight-bold"><a href="index.html">Volver</a></button>
+     <footer class="container-fluid">
+            <div class="row bg-success pt-5">
+                <div class="col-lg-6 col-sm-2">
+                <blockquote class="blockquote text-white">
+                    <p>“Deje que los alimentos sean su medicina</p><p>y que la medicina sea su alimento”</p>
+                    <cite title="Source Title">Hipocrates</cite>
+                </blockquote>
+            </div>
+            <div class="col-lg-3 col-sm-2">
+                <a href="preguntas.html"><p class="font-weight-bold">Preguntas frecuentes</p></a>
+                <a href="pagos.html"><p class="font-weight-bold">Medios de pago</p></a>
+                <a href="error.404.html"><p class="font-weight-bold">Trabaja con nosotros</p></a> 
+            </div>
+            <div class="col-lg-3 col-sm-2">
+                <a href="https://www.instagram.com/bioguia" target="blank"><p class="font-weight-bold">Instagram</p></a>
+                <a href="https://www.facebook.com/LaBioguia" target="blank"><p class="font-weight-bold">Facebook</p></a>
+                <a href="https://www.youtube.com/user/Bioguia"target="blank"><p class="font-weight-bold">Youtube</p></a>
+            </div>
+            </div>
+    </footer>
+        <script src="js/jquery-3.5.1.slim.min.js"></script> 
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>  
 </body>
 </html>

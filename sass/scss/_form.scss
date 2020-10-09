@@ -1,14 +1,31 @@
 form {
+    background-color: rgb(252, 252, 252);
     background-image: url(../../assets/imagenes/vegetables.gif);
     background-repeat: no-repeat;
-    background-size: 750px 600px;
+    background-size: 800px 600px;
     background-position: bottom;
     height: 800px;
 }
 
+textarea, input[type=email], [type=text] {
+    width: 500px;
+}
+textarea {
+    height: 180px;
+}
+
+
 @media screen and (max-width: 576px) {
-    form {
+
+form {
     background-size: 450px 400px;
     height: 550px;
-    }
+}
+   
+textarea, input[type=email],[type=text]  {
+    width: 200px;
+}
+textarea {
+    height: 100px;
+}
 }

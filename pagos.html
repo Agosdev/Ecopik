@@ -1,57 +1,78 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-     <title>Ecopik</title>
-     <meta charset="utf-8"/>
-     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-     <meta name= "keywords" content="COMUNIDAD ECOLOGICA, DISTRIBUCION DE ALIMENTOS ORGANICOS, HUERTAS EN BUENOS AIRES"/>
-     <meta name= "description" content="Espacio para amantes de la cocina y cosecha de alimentos saludables. Distribuimos frutas, verduras y viandas. Organizamos concursos y ferias."/>
-     <link rel="icon" type="image/icon" href="assets/imagenes/icon.png"/>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-     <link rel="stylesheet" href="css/bootstrap.min.css"> 
-     <link rel="stylesheet" type="text/css" href="sass/css/style.css"/>
-    </head>
-    <body>
-        <header>
-            <h2>Medios de pago:</h2>
-        </header>
-        <div class="row pt-5">
-            <div class="col-lg-4 col-sm-2">
-               <img class="mb-5" src="assets/imagenes/efectivo.jpg" width="100px" height="100px"  alt="concurso"/>
-               <p class="font-weight-bold text-uppercase">Efectivo</p>
-           </div>
-           <div class="col-lg-4 col-sm-2">
-            <img class="mb-5" src="assets/imagenes/mercadopago.jpg" width="100px" height="100px" alt="concurso"/>
-              <a href="https://www.mercadopago.com.ar/home"><p class=" text-dark font-weight-bold">Mercado pago con debito o credito</p></a>
-           </div>
-           <div class="col-lg-4 col-sm-2">
-            <img class="mb-5" src="assets/imagenes/banco.jpg" width="100px" height="100px" alt="concurso"/>
-              <p class="font-weight-bold text-uppercase">Deposito/transferencia</p>
-           </div>
-        </div>
-        <button class="m-3 btn font-weight-bold"><a href="index.html">Volver</a></button>
-<footer>
-    <div class="row bg-success pt-5">
-        <div class="col-6">
-          <blockquote class="blockquote text-white">
-             <p>“Deje que los alimentos sean su medicina</p><p>y que la medicina sea su alimento”</p>
-             <cite title="Source Title">Hipocrates</cite>
-          </blockquote>
-       </div>
-       <div class="col-3">
-          <a href="preguntas.html"><p class="font-weight-bold">Preguntas frecuentes</p></a>
-          <a href="pagos.html"><p class="font-weight-bold">Medios de pago</p></a>
-          <a href="error.404.html"><p class="font-weight-bold">Trabaja con nosotros</p></a> 
-       </div>
-       <div class="col-3">
-          <a href="https://www.instagram.com/bioguia" target="blank"><p class="font-weight-bold">Instagram</p></a>
-          <a href="https://www.facebook.com/LaBioguia" target="blank"><p class="font-weight-bold">Facebook</p></a>
-          <a href="https://www.youtube.com/user/Bioguia"target="blank"><p class="font-weight-bold">Youtube</p></a>
-       </div>
-    </div>
-</footer>
-<script src="js/jquery-3.5.1.slim.min.js"></script> 
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>  
-</body>
+   <html lang="es">
+      <head>
+            <title>Ecopik</title>
+            <meta charset="utf-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+            <meta name= "keywords" content="COMUNIDAD ECOLOGICA, DISTRIBUCION DE ALIMENTOS ORGANICOS, HUERTAS EN BUENOS AIRES"/>
+            <meta name= "description" content="Espacio para amantes de la cocina y cosecha de alimentos saludables. Distribuimos frutas, verduras y viandas. Organizamos concursos y ferias."/>
+            <link rel="icon" type="image/icon" href="assets/imagenes/icon.png"/>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+            <link rel="stylesheet" href="css/bootstrap.min.css"> 
+            <link rel="stylesheet" type="text/css" href="sass/css/style.css"/>
+     </head>
+      <body>
+         <header>
+               <h2 class="glow">Medios de pago:</h2>
+         </header>
+               <style >
+                  .parallax {
+                  /* The image used */
+                  background-image: url("assets/imagenes/medios.jpg");
+                  /* Set a specific height */
+                  min-height: 350px;  
+                  /* Create the parallax scrolling effect */
+                  background-attachment: fixed;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: 720px 430px;
+                  }
+                  @media screen and (max-width: 576px) {
+                     .parallax {
+                        background-size: 500px 350px;
+                        }
+                  }
+                  </style>
+         <div class="parallax d-none d-sm-block"></div>
+            <div class="d-flex justify-content-center">
+                  <div class="row medios_pago">
+                     <div class="p-4 col-lg-4 col-sm-2">
+                           <img class="m-5" src="assets/imagenes/efectivo.jpg" width="100px" height="100px"  alt="concurso"/>
+                           <p class="font-weight-bold text-uppercase">Efectivo</p>
+                     </div>
+                     <div class="p-4 col-lg-4  col-sm-2">
+                           <img class="m-5" src="assets/imagenes/mercadopago.jpg" width="100px" height="100px" alt="concurso"/>
+                           <a href="https://www.mercadopago.com.ar/home"><p class=" text-dark font-weight-bold">Mercado pago debito/credito</p></a>
+                     </div>
+                     <div class="p-4 col-lg-4 col-sm-2">
+                           <img class="m-5" src="assets/imagenes/banco.jpg" width="100px" height="100px" alt="concurso"/>
+                           <p class="font-weight-bold text-uppercase">Deposito o transferencia</p>
+                     </div>
+               </div>
+            </div>
+             <button class="m-4 btn font-weight-bold"><a href="index.html">Volver</a></button>
+       <footer class="container-fluid">
+            <div class="row bg-success pt-5">
+                  <div class="col-lg-6 col-sm-2">
+                     <blockquote class="blockquote text-white">
+                        <p>“Deje que los alimentos sean su medicina</p><p>y que la medicina sea su alimento”</p>
+                        <cite title="Source Title">Hipocrates</cite>
+                     </blockquote>
+                  </div>
+                  <div class="col-lg-3 col-sm-2">
+                     <a href="preguntas.html"><p class="font-weight-bold">Preguntas frecuentes</p></a>
+                     <a href="pagos.html"><p class="font-weight-bold">Medios de pago</p></a>
+                     <a href="error.404.html"><p class="font-weight-bold">Trabaja con nosotros</p></a> 
+                  </div>
+                  <div class="col-lg-3 col-sm-2">
+                     <a href="https://www.instagram.com/bioguia" target="blank"><p class="font-weight-bold">Instagram</p></a>
+                     <a href="https://www.facebook.com/LaBioguia" target="blank"><p class="font-weight-bold">Facebook</p></a>
+                     <a href="https://www.youtube.com/user/Bioguia"target="blank"><p class="font-weight-bold">Youtube</p></a>
+                  </div>
+            </div>
+       </footer>
+         <script src="js/jquery-3.5.1.slim.min.js"></script> 
+         <script src="js/popper.min.js"></script>
+         <script src="js/bootstrap.min.js"></script>  
+     </body>
 </html>

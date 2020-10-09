@@ -1,4 +1,6 @@
 html, body {
+    width: 100%;
+    scroll-behavior: smooth;
     font-family: alata;
     margin: 0;
     padding: 0;
@@ -6,36 +8,74 @@ html, body {
     background-color: $bg-color;
     color: $font-color;
     text-align: center;
+}
 
-#logo {
-    margin-top: 6px;
+// SCROLL PROGRESIVO
+/* Style the header: fixed position (always stay at the top) */
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+  
+  /* The progress container (grey background) */
+  .progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+  }
+  
+  /* The progress bar (scroll indicator) */
+  .progress-bar {
+    height: 8px;
+    background: #4caf50;
+    width: 0%;
+  }
+
+.actioncall {
+    border: 3px solid black;
     position: absolute;
-    top: 0px;
-     }
+    top: 0;
+    left: 85%;
+    z-index: 1;
+}
 
-h1 {
+.carrusel {
+    z-index: 2;
+}
+
+.logo {
+    position: absolute;
+    left: 45px;
+    top: 10px;
+}
+
+h1{
+    padding-top: 30px;
     font-family: chelseamarket;
     font-size: 35px;
 }
 
 .navbar {
-        width: 160px;
-        height: 100%;
-        box-shadow: 3px 10px 15px black;
-        display: flex;
-        flex-direction: column;
-            ul li {
-                  font-size: 15px;
-                  font-weight: bolder;
-                  letter-spacing: 2px;
-                  list-style: none;
-                  padding-bottom: 30px;
-                  padding-top: 5px;
-                  align-items: center;
-               }
+    width: 160px;
+    height: 100%;
+    box-shadow: 3px 10px 15px black;
+    display: flex;
+    flex-direction: column;
+    ul li {
+      font-size: 15px;
+      font-weight: bolder;
+      letter-spacing: 2px;
+      list-style: none;
+      padding-bottom: 30px;
+      padding-top: 5px;
+      align-items: center;
+     }
 }
 
-div.op {
+div.options {
     right: 37px;
 }
 
@@ -52,19 +92,14 @@ a {
 h2 {
     font-family: chelseamarket;
     color: lime;
-    font-size: 70px;
+    font-size: 100px;
     .bg-dark {
         background-size: auto;
     }
-}
+ }
 
-
-.table {
-    width: 96%;
-}
-
-p.__bg-dark {
-    width: 99%;
+ .glow{
+    text-shadow: lime 0 0 8px;
 }
 
 .__menu-1 {
@@ -79,35 +114,96 @@ span {
     margin-top: 10px;
     text-transform: uppercase;
     font-weight: bold;
-    letter-spacing: 8px;
-    font-size: 15px;
+    letter-spacing: 13px;
+    font-size: 25px;
 }
 
-textarea, input[type=email]  {
-    width: 500px;
-}
-textarea {
-    height: 200px;
+p.__bg-dark {
+    width: 99%;
 }
 
-footer {
-    a:hover {
-        text-decoration: none;
-        font-size: 22px;
-        color: black;
+.table {
+    width: 96%;
+}
 
+.checked {
+    color: orange;
+}
+
+.gradiente {
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    width: 100%;
+}
+
+// BARRAS DE CONCURRENCIA
+
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.bg-percent {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+div.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Adspand bottom padding */
+  color: white; /* White text color */
+}
+
+div.año_3 {
+    width: 90%; 
+    background-color: rgb(58, 243, 58);
+} /* Green */
+div.año_2 {
+    width: 80%; 
+    background-color: rgb(19, 200, 255);
+} /* Blue */
+div.año_1 {
+    width: 60%;
+    background-color: rgb(250, 45, 171);
+} /* Red */
+
+footer{
+     margin: 0;
+     a:hover {
+     text-decoration: none;
+     color: black;
     }
-
 }
-
+    
 cite {
     font-size: 13px;
 }
 
+// EN PAGOS.HTML
+
+.medios_pago {
+    max-width: 100%;
+    margin: 30px;
+}
+
+// EN GRACIAS.HTML
+
+.texto-especial {
+    text-align: center;
+    letter-spacing: 25px;
+    font-weight: 900;
+    font-size: 80px;
+    height: 100%;
+}
+
 @media screen and (max-width: 576px) {
 
-.respuesta {
-    font-size: calc(3rem+2vw);
+.logo {
+     width: 50px;
+     height: 50px;
+     margin-top: $margin - 2px;
+     left: 85%;
 }
 
 .navbar {
@@ -115,13 +211,6 @@ cite {
     height: 70px;
 }
         
-#logo {
-    width: 50px;
-    height: 50px;
-    margin-top: $margin;
-    left: 85%;
-}
-
 ul {
     display: flex;
 }
@@ -132,16 +221,16 @@ li {
 }
 
 h1 {
+    padding-top: 0px;
     position: absolute;
-    left: 40%;
+    left: 60%;
 }
 
 h2 {
-    font-size: 50px;
-}
-
-.table {
-    width: 80%;
+    font-size: 45px;
+    .prox {
+        font-size:calc(100% - 12px);
+    }    
 }
 
 a {
@@ -157,11 +246,18 @@ a {
 
 }
 
- textarea, input[type=email]  {
-    width: 200px;
+.actioncall {
+    top: 30px;
+    left: 75%;
 }
-textarea {
-    height: 100px;
+
+.table {
+    width: 80%;
 }
- }
+
+p.texto-especial {
+    letter-spacing: 10px;
+    font-weight: 500;
+    font-size: 20px;
+}
 }
